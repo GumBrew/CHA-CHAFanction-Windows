@@ -58,7 +58,7 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
 resource plan 'Microsoft.Web/serverfarms@2021-02-01' = {
   name: appServicePlanName
   location: location
-  kind: 'linux'
+  kind: 'Windows'
   properties: {
     reserved: true
   }
